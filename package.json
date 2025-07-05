@@ -1,0 +1,20 @@
+{
+  "name": "webservices",
+  "version": "1.0.0",
+  "description": "My contacts project",
+  "homepage": "https://github.com/gmaxstores/webservices#readme",
+  "bugs": {
+    "url": "https://github.com/gmaxstores/webservices/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gmaxstores/webservices.git"
+  },
+  "license": "ISC",
+  "author": "Maxwell Nvani",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
