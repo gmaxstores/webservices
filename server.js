@@ -1,11 +1,23 @@
 const express = require("express");
 const app = express();
-const indexRoute = require("./routes");
+const routes = require("./routes");
+const contactsRoute = require("./routes/contactsRoute")
+const mongodb = require("./data/database");
 
 const port = process.env.PORT || 3000;
 
-app.use("/", indexRoute)
+app.use("/", routes)
 
-app.listen(port, () => {
-    console.log(`Server is running on http://localhost:${port}`);
+// route to all contacts
+app.use("/contacts", contactsRoute);
+
+mongodb.connectToDatabase((err) => {
+    if (err) {
+        console.error("Failed to connect to the database:", err);
+    }
+    else {
+        app.listen(port);
+        console.log(`Server is running on http://localhost:${port} and mongodb is connected`);
+    }
 });
+
