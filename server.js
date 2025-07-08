@@ -3,8 +3,13 @@ const app = express();
 const routes = require("./routes");
 const contactsRoute = require("./routes/contactsRoute")
 const mongodb = require("./data/database");
+const bodyParser = require("body-parser");
+
 
 const port = process.env.PORT || 3000;
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use("/", routes)
 
