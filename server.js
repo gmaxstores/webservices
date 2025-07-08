@@ -11,10 +11,12 @@ const port = process.env.PORT || 3000;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+//route to hello world and api documentation
 app.use("/", routes)
 
-// route to all contacts
+// route to all contacts operation
 app.use("/contacts", contactsRoute);
+
 
 mongodb.connectToDatabase((err) => {
     if (err) {

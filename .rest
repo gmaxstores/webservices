@@ -36,3 +36,8 @@ Content-Type: application/json
 ###
 //api to delete a contact by id on localhost
 DELETE http://localhost:3000/contacts/delete/6869531a45c12979a26694c0 HTTP/1.1
+
+###
+
+///api to see api documentation on localhost
+GET http://localhost:3000/api-docs HTTP/1.1
