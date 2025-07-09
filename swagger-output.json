@@ -8,7 +8,7 @@
   "host": "contactsproject-d17s.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/": {
