@@ -21,7 +21,7 @@ Content-Type: application/json
 
 ###
 
-//api to update a contact by id on localhost
+//api to update a contact by id on published api
 PUT https://contactsproject-d17s.onrender.com/contacts/update/6869535045c12979a26694c1 HTTP/1.1
 Content-Type: application/json
 
